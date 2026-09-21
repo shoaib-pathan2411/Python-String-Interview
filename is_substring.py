@@ -1,4 +1,8 @@
 def is_substring(s, sub):
+    return sub in s
+print(is_substring('hello', 'll'))
+print(is_substring('hello', 'world'))
+def is_substring(s, sub):
     n = len(s)
     m = len(sub)
     # print(n)

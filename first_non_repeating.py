@@ -7,9 +7,13 @@ def first_non_repeating(s):
             d[char]= 1
     print(d)
 
-    for char in s:
-        if d[char] == 1:
-            return char
+    # for char in s:
+    #     if d[char] == 1:
+    #         return char
+    # return None
+    for k, v in d.items():
+        if v == 1:
+            return k
     return None
 
 print(first_non_repeating('swiss'))

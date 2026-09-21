@@ -9,9 +9,14 @@ def most_frequent_character(s):
     max_char = None
     max_count = 0
 
-    for key in d:
-        if d[key] > max_count:
-            max_count = d[key]
+    # for key in d:
+    #     if d[key] > max_count:
+    #         max_count = d[key]
+    #         max_char = key
+    # return max_char
+    for key, value in d.items():
+        if value > max_count:
+            max_count = value
             max_char = key
     return max_char
 
